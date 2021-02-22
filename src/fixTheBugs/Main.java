@@ -1,6 +1,7 @@
 package fixTheBugs;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -120,13 +121,14 @@ public class Main {
 		
         int arrlength =  arrayList.size();
        
-        int[] array = arrayList.stream().mapToInt(i -> i).toArray();
+//        int[] array = arrayList.stream().mapToInt(i -> i).toArray();
+//        
+//        for (int i = 0; i< array.length; i++) {
+//        	System.out.println ("The list prior to sorting is " + array[i]);
+//        }
         
-        for (int i = 0; i< array.length; i++) {
-        	System.out.println ("The list prior to sorting is " + arrayList);
-        }
-        
-       
+        Collections.sort (arrayList); 
+        System.out.println ("The sorted array is " + arrayList);
        //TODO: Complete this method. The expenses should be sorted in ascending order. (Merge sort)
     }
 }
